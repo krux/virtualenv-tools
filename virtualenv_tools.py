@@ -26,7 +26,7 @@ ACTIVATION_SCRIPTS = [
 ]
 _pybin_match = re.compile(r'^python\d+\.\d+$')
 _activation_path_re = re.compile(r'^(?:set -gx |setenv |)VIRTUAL_ENV[ =]"(.*?)"\s*$')
-_shebang_bin_re = re.compile(r'.*/bin/python(\d+(\.\d+)?)?$')
+_shebang_bin_re = re.compile(r'.*/bin/python(\d+(\.?\d+)?)?$')
 
 
 def update_activation_script(script_filename, new_path):
